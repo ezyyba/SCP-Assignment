@@ -1,0 +1,104 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f00;
+    text-shadow: 0 0 10px red;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid red;
+    box-shadow: 0 0 15px red;
+}
+
+.scp-content {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.scp-content h2 {
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    box-shadow: 0 3.75px 3px -2px red;
+}
+
+.scp-content p {
+    margin: 15px 0;
+}
+
+.scp-content h3 {
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    box-shadow: 0 3.75px 3px -2px red;
+}
+
+.lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lazy-load.fade-in {
+    opacity: 1;
+}
